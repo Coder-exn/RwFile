@@ -18,7 +18,7 @@ You can add a dependency in your `pom.xml` (Maven):
 
 ```xml
 <dependency>
-	<groupId>com.hzy.rwfile</artifactId>
+    <groupId>com.hzy.rwfile</artifactId>
     <artifactId>rwfile</artifactId>
 </dependency>
 ```
@@ -27,9 +27,9 @@ First, you may open a file:
 
 ```java
 public static void main(String[] args) throws IOException {
-	try (RwFile file = RwFile.open("/hello.txt", "rw")) {
+    try (RwFile file = RwFile.open("/hello.txt", "rw")) {
     	...
-	}
+    }
 }
 ```
 
