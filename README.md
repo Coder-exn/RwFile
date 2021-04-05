@@ -16,10 +16,6 @@ Hello world!
 
 You can add a dependency in your `pom.xml` (Maven):
 
-**Warning: I'm sorry, you can't add dependency now. My project isn't approved yet. It's my first time to upload my project to `maven central`, there's some errors.
-I'll try my best to solve the problem.
-If you have any ideas, please contact and propose your advice, thank you!**
-
 ```xml
 <dependency>
     <groupId>com.hzy.rwfile</artifactId>
