@@ -18,8 +18,9 @@ You can add a dependency in your `pom.xml` (Maven):
 
 ```xml
 <dependency>
-    <groupId>com.hzy.rwfile</artifactId>
+    <groupId>io.github.coder-exn</artifactId>
     <artifactId>rwfile</artifactId>
+    <version>1.0-RELEASE</version>
 </dependency>
 ```
 
