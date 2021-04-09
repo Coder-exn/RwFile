@@ -16,7 +16,7 @@ Hello world!
 
 You can add a dependency in your `pom.xml` (Maven):
 
-**Warning: I'm sorry that you can't add the maven dependency now. I'm new to maven and github, about maven, there's still some problems that I have to resolve. If you have any ideas, please propose (contact me at: 787305742@qq.com)**
+**Warning: I'm sorry that you can't add the maven dependency now. I'm new to maven and github, about maven, there's still some problems that I have to resolve. You can use the jars for the time being. If you have any ideas, please propose (contact me at: 787305742@qq.com)**
 
 ```xml
 <dependency>
