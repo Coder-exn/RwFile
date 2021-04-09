@@ -16,6 +16,8 @@ Hello world!
 
 You can add a dependency in your `pom.xml` (Maven):
 
+**Warning: You can't add the maven dependency now. I'm new to maven and github, about maven, there's still some problems that I have to resolve. If you have any ideas, please propose (contact me at: 787305742@qq.com)**
+
 ```xml
 <dependency>
     <groupId>io.github.coder-exn</artifactId>
@@ -117,9 +119,9 @@ try (RwFile file = RwFile.open("/hello.txt", "w")) {
 Result:
 
 ```
-Exception in thread "main" com.hzy.rwfile.UnsupportedRwModeException: Mode 'r' is not supported.
-	at com.hzy.rwfile.RwFile.requireInputStreamNonNull(RwFile.java:253)
-	at com.hzy.rwfile.RwFile.readContent(RwFile.java:159)
+Exception in thread "main" UnsupportedRwModeException: Mode 'r' is not supported.
+	at RwFile.requireInputStreamNonNull(RwFile.java:253)
+	at RwFile.readContent(RwFile.java:159)
 	at lab.Main.main(Main.java:10)
 ```
 
@@ -177,7 +179,7 @@ Hello world!Hello ABCDEFG!~
 
 You can also use `enableModes`:
 
-See also: `com.hzy.rwfile.RwMode`.
+See also: `RwMode`.
 
 ```java
 try (RwFile file = RwFile.open("/hello.txt", "w")) {

@@ -1,4 +1,4 @@
-package com.hzy.rwfile;
+package io.github.coderexn;
 
 /**
  * Thrown when some mode required not enabled.

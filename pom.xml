@@ -4,17 +4,41 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.hzy</groupId>
+    <groupId>io.github.coder-exn</groupId>
     <artifactId>rwfile</artifactId>
-    <version>1.0.RELEASE</version>
+    <version>1.0-RELEASE</version>
 
     <distributionManagement>
+        <snapshotRepository>
+            <id>ossrh</id>
+            <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
         <repository>
-            <id>sonatype</id>
-            <name>RwFile</name>
-            <url>file://${project.basedir}/maven-repo</url>
+            <id>ossrh</id>
+            <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
         </repository>
     </distributionManagement>
+
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>Coder-exn</name>
+            <email>787305742@qq.com</email>
+            <url>https://github.com/Coder-exn</url>
+        </developer>
+    </developers>
+
+    <scm>
+        <url>https://github.com/Coder-exn/RwFile</url>
+        <connection>https://github.com/Coder-exn/RwFile.git</connection>
+        <developerConnection>https://github.com/Coder-exn</developerConnection>
+    </scm>
 
     <build>
         <plugins>
@@ -34,10 +58,6 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>15</source>
-                    <target>15</target>
-                </configuration>
                 <version>3.8.1</version>
             </plugin>
 
@@ -89,9 +109,10 @@
     </build>
 
     <properties>
-        <maven.compiler.source>16</maven.compiler.source>
-        <maven.compiler.target>16</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.release.version>1.0-RELEASE</project.release.version>
     </properties>
 
 </project>
