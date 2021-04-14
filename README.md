@@ -179,7 +179,7 @@ Hello world!Hello ABCDEFG!~
 
 You can also use `enableModes`:
 
-See also: `RwMode`.
+See also: `io.github.coderexn.RwMode`.
 
 ```java
 try (RwFile file = RwFile.open("/hello.txt", "w")) {
